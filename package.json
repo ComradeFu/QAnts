@@ -1,0 +1,25 @@
+{
+  "name": "qants",
+  "version": "1.0.0",
+  "description": "A worker frameworker writen by tinyfunny.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComradeFu/QAnts.git"
+  },
+  "keywords": [
+    "worker",
+    "node",
+    "nodejs",
+    "js"
+  ],
+  "author": "fuguangze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComradeFu/QAnts/issues"
+  },
+  "homepage": "https://github.com/ComradeFu/QAnts#readme"
+}
