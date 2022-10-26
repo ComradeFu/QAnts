@@ -4,6 +4,7 @@ const workers = module.exports = { __index: workerData.index }
 const buffer_op = require("buffer-op")
 const box = buffer_op.box
 const Stream = buffer_op.Stream
+require("./utils")
 
 const config = require("./config")
 
@@ -92,6 +93,8 @@ workers.config = function (cf)
     Object.assign(config, cf)
 
     config.cluster = config.cluster || 1
+
+    global.workers_config = config
 }
 
 

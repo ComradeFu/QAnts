@@ -38,8 +38,6 @@ const cmp = function (first, target)
 
 queen.init = async function ()
 {
-    require("../kernel/utils")
-
     await queen.run_logger()
 
     await templates.run()
@@ -630,7 +628,8 @@ queen.run_logger = async function ()
     let logconsummer = config.logconsummer || []
     for (let one of logconsummer)
     {
-        let cls = require(`../gdefine/class/logconsummer/${one.cls}`)
+        let consumer_path = path.resolve(one.cls)
+        let cls = require(consumer_path)
         let one_ins = new cls()
 
         await one_ins.init(one, queen)
